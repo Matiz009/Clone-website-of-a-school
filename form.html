@@ -1,148 +1,74 @@
+<!doctype html>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            form
-        </title>
-        <style type="text/css">
-          body{background-color:white ;
-          margin-left: 20px;}
+<html lang="en">
 
-        </style>
+<head>
+    <link rel="stylesheet" type="text/css" href="form2.css">
+    <title>Form</title>
+</head>
 
+<body style="background-color: #269abc">
 
-    </head>
+<form  action="Form2.php" method="post">
+    <h1 style="text-align:center;color: darkblue" ;>Admission Form</h1>
+    <h2 id="student">Personal Information</h2>
+    Enter your full name : <label>
+    <input type="text" placeholder="Brian Lara" name="Name">
+</label>
+    Enter your Father Name : <label>
+    <input type="text" placeholder="Mathew Lara" name="fName">
+</label>
+    Date of Birth : <label>
+    <input type="date"  name="Date">
+</label>
+    Enter your full Address: <label>
+    <input type="text" name="Address" placeholder="House#12 street 6 DHA Lahore">
+</label><br><br>
+   Gender:<label >
+    <input type="radio" name="radio" value="Male">Male
+    <input type="radio" name="radio" value="Female">Female
+    <input type="radio" name="radio" value="Others">Others
+</label><br><br>
+    Enter your age:<label>
+    <input type="radio" name="age" value="Below 5">Below 5
+    <input type="radio" name="age" value="Below 10">Below 10
+    <input type="radio" name="age" value="Below 15">Below 15
+</label>
+   <hr>
+    <h2>Previous Education</h2>
+    <h4>Select the class you recently passed :</h4><label>
+    <input type="radio" name="class" value="PG">PG
+    <input type="radio" name="class" value="KG">KG
+    <input type="radio" name="class" value="KG 2">KG 2
+    <input type="radio" name="class" value="FIRST">FIRST
+    <input type="radio" name="class" value="SECOND">SECOND
+    <input type="radio" name="class" value="THIRD">THIRD
+    <input type="radio" name="class" value="FOURTH">FOURTH
+    <input type="radio" name="class" value="FIFTH">FIFTH
+</label><br>
+    <h4>Select the Grade you secured:</h4><label>
+    <input type="checkbox" name="grade" value="A+" >A+
+    <input type="checkbox" name="grade" value="A" >A
+    <input type="checkbox" name="grade" value="B+" >B+
+    <input type="checkbox" name="grade" value="B" >B
+    <input type="checkbox" name="grade" value="C+" >C+
+    <input type="checkbox" name="grade" value="C+" >C
+</label>
+    <hr>
+    <h2>Class INFO</h2>
+    <h4>Enter the class you want to get admission</h4><label>
+    <input type="text" placeholder="e.g 5th/7th" name="admission"><br>
+</label><br>
+    <h4>Why you want to get admission here:</h4><br><label>
+    <textarea name="ans" placeholder="Answer this question in detail"></textarea>
+</label>
+    <br><hr>
 
-    <body>
-        <h1 style="color:darkred;">Admission Form</h1>
-        <h3 style="color: purple;">Student Details!!</h3>
-
-        <h4 style="color: fuchsia;">Fill student detail below</h4>
-        <hr>
-
-        <form>
-            Fullname<br>
-
-            <input type="name";><br>
-            <br>
-            <hr>
-                Gender<br>
-
-            
-             <select>
-                 <option>..Boy..</option>
-                  <option>..Girl..</option>
-            </select>
-            <hr>
-
-            <br>
-            Date of Birth
-            <br>
-            <input type="date">
-            <br>
-            <hr>
-              
-            Class into which admitted<br>
-            <select>
-                <option>pre-Nursery</option>
-                <option>Nursery</option>
-                <option>KG-1</option>
-                <option>One</option>
-                <option>Two</option>
-                <option>Three</option>
-                <option>Four</option>
-                <option>Five</option>
-                <option>Six</option>
-                <option>Seven</option>
-                <option>Eight</option>
-                <option>O-levels</option>
-                <option>A-levels</option>
-
-                
-            </select>
-            <hr>
-            <br>
-            Place of Birth<br>
-            <select>
-                <option>Pakistan</option>
-                <option>Foreign</option>
-
-            </select>
-            <hr>
-            <br>
-            Nationality
-            <br>
-            <input type="text">
-            <br>
-            <hr>
-            Religion<br>
-            <input type="checkbox";>Muslim<br>
-            <input type="checkbox";>Christian<br>
-            <input type="checkbox";>Hindu<br>
-            <input type="checkbox";>Sikh<br>
-            <input type="checkbox";>Budhist<br>
-            <input type="checkbox";>Zoroastrian<br>
-            <input type="checkbox";>Other<br>
-            <hr>
-            Last School Attended<br>
-
-            <input type="text"><br>
-
-            <br>
-
-            Last class Passed<br>
-
-            <input type="text"><br>
-
-            Grade in Last class<br>
-            <input type="radio";>A+<br>
-            <input type="radio";>A<br>
-            <input type="radio";>B+<br>
-            <input type="radio";>B<br>
-            <input type="radio";>C+<br>
-            <input type="radio";>C<br>
-            Bellow  C grade are not eligible to apply!!<br>
-            <hr>
-            Upload your photo!!<br>
-            <input type="file"><br>
-            <br>
-            Birth Certificate!<br>
-
-            <input type="file"><br>
-            <br>
-            Family Photo<br>
-            <input type="file"> <br>
-
-            <hr>
-            Residence telephone No.<br>
-
-            <input type="tel"><br>
-            <hr>
-
-            Residence Adress!!<br>
-
-            <textarea rows="8";cols="30";> </textarea>
-
-            <hr>
-            <input type="submit">
-            
-            
+    <div id="s" style="text-align: center"> <input type="submit"></div>
 
 
-            
-         
+</form>
 
-
-        </form>
-
-
-    </body>
-
-
-
-
-
-
+</body>
 
 </html>
