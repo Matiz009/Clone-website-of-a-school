@@ -7,7 +7,7 @@ $Address=$_POST['Address'];
 $radio_value=$_POST['radio'];
 $radio1_value=$_POST['age'];
 $radio2_value=$_POST['class'];
-$checkbox_value=$_POST['grade'];
+$name=$_POST['program'];
 $admission=$_POST['admission'];
 $answer=$_POST['ans'];
 
@@ -19,7 +19,9 @@ echo "<br>Address is : "." ".$Address;
 echo "<br>Gender is : "." ".$radio_value;
 echo "<br>Age is : "." ".$radio1_value;
 echo "<br>Class is : "." ".$radio2_value;
-echo "<br>Grade is :"." ".$checkbox_value;
+foreach ($name as $input){
+    echo "<br>Grade is"." ".$input."<br>";
+}
 echo "<br>Applied in class"." ".$admission;
 echo"<br>Answer is :"." ".$answer;
 
