@@ -2,12 +2,13 @@
 $host= 'localhost';
 $user= 'root';
 $password= '';
-$database= 'studentrecord';
+$database= 'dcs';
 
-$connect=mysqli_connect($host,$user,$password,$database);
+$linker= mysqli_connect($host,$user,$password,$database);
 
-if($connect){
-    echo"Successfully connected";
-}else{
-    echo "You are a good programmer";
-}
+ if($linker){
+     echo "Record has been captured.<br>";
+ }else{
+     echo "U are a good Programmer";
+ }
+
