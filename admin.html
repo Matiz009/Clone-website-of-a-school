@@ -22,8 +22,27 @@ Enter Program Name:<div style="margin-left: 14.5%;margin-top: -1.5%"><label><inp
 <form action="delete.php" method="post">
     Enter Registration Number: <label><input type="number" placeholder="e.g 025" name="delReg"></label><br><br>
 
+
     <input type="submit" value="Delete Data"><hr>
-</form>
+</form><div>
+    <h2>View Data</h2>
+</div><br>
+<div >
+    <a href="view.php"><input type="submit" value="Click Here to view Data"></a><hr>
+</div><div>
+    <h2> Update Record</h2><br>
+    <form action="update.php" method="post">
+        Enter Student Name: <label>
+        <div style="margin-left: 19% ; margin-top: -1.5%"><input type="text" name="stdName" placeholder="Ali Ahmad" ></div>
+    </label><br>
+        Enter Student Registration Number: <label>
+        <input type="number" name="stdReg" placeholder="e.g 034">
+    </label><br>
+        <input type="submit" value="Update Record">
+
+    </form>
+ </div>
+
 
 
 
