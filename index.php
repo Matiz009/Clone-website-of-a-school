@@ -20,7 +20,7 @@
             <label>Enter your Password:
                 <input type="password" name="userPassword">
             </label>
-               <br>
+               <br><br>
     
             <input type="submit" value="login">
                <br>
@@ -46,24 +46,24 @@ if ($conn->connect_error) {
 
     if(isset($_POST['userName'])){  
         
-     $uname = $_POST['userName'];  //$uname aik variable declare kiya hai hum ne  jo ye $_POST['userName'] store kre ga.  ye                                                   $_POST['userName'] wo hai jo form se post ho rha hai
+     $uname = $_POST['userName'];
     
-     $pass = $_POST['userPassword']; //same username ki trah
+     $pass = $_POST['userPassword'];
     
-     $query = "SELECT * from user WHERE userName='".$uname."' AND userPassword='".$pass."' ";  // ye query ab check kre gi k db ka username or                                                                                             password POST waalon se match kr rha hai k nai.                                                                                             Match kre ga to wo select ho jaye ga
+     $query = "SELECT * from user WHERE userName='".$uname."' AND userPassword='".$pass."' ";
      
       
-      $result= mysqli_query($conn,$query);             // $conn db ka connection variable hai. jo bhi result hum ne $query se fetch kiya hai wo                                                    yahan save hoga i.e. $result men
+      $result= mysqli_query($conn,$query);
     
-      if(mysqli_num_rows($result)==1){                 //mysqli_num_rows() num of rows return krta hai, yahan pe hum ye check kr rhe hein k                                                        $result mein hmari query k against koi row store hoi hai k nai
+      if(mysqli_num_rows($result)==1){
           
         
-          header("Location: admin.html");               // if yes: to browser redirect kr de main.html pe
+          header("Location: admin.html");
           exit();
         }
           else {
              echo "<br>";
-             die("Query Failed: Wrong Username or Password". mysqli_error($conn));  //agar nai to error show ho ga
+             die("Query Failed: Wrong Username or Password". mysqli_error($conn));
         }
     }
 ?>
